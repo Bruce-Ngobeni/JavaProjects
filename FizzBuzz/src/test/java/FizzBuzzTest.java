@@ -1,9 +1,7 @@
-import org.junit.Assert;
 import org.junit.Test;
 import za.co.wethinkcode.FizzBuzz;
 
 import static org.junit.Assert.*;
-import za.co.wethinkcode.FizzBuzz;
 
 public class FizzBuzzTest {
 
@@ -25,5 +23,12 @@ public class FizzBuzzTest {
     public void testBuzz() {
         assertEquals("Buzz", FizzBuzz.fizzBuzz(5));
         assertEquals("Buzz", FizzBuzz.fizzBuzz(10));
+    }
+
+    @Test
+    public void testNotFizzOrBuzz(){
+        assertEquals("1", FizzBuzz.fizzBuzz(1));
+        assertEquals("2", FizzBuzz.fizzBuzz(2));
+
     }
 }
